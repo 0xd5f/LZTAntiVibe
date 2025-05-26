@@ -1,6 +1,7 @@
 # LZT AntiVibe — сканер сайтов на уязвимости
 
-![UI example](https://lolz.live/data/logo/logo.png) 
+![image](https://github.com/user-attachments/assets/73464b43-4371-4f45-9f47-6664a79601c8)
+
 
 ## Описание
 
@@ -29,12 +30,6 @@ SQL-инъекции, XSS, SSTI, LFI/RFI, SSRF, открытые редирек�
 - Проверка Security Headers
 - Info Leak (Debug/Trace/Secrets)
 - Стиль интерфейса полностью повторяет lolz.live
-
----
-
-## Скриншоты
-
-
 
 ---
 
