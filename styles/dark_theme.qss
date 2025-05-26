@@ -1,0 +1,222 @@
+/* dark_theme.qss */
+
+QWidget {
+    background-color: #2C2F33;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton {
+    background-color: #7289DA;
+    color: #FFFFFF;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+QPushButton:hover {
+    background-color: #5A73B8;
+}
+
+QPushButton:disabled { /* Стиль для неактивных кнопок */
+    background-color: #4F545C;
+    color: #9A9A9A;
+}
+
+QLabel {
+    font-size: 14px;
+    color: #FFFFFF; /* Убедимся, что цвет текста QLabel белый */
+}
+
+QComboBox {
+    background-color: #2F3136;
+    color: #FFFFFF;
+    padding: 5px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    selection-background-color: #7289DA; /* Цвет фона выбранного элемента */
+}
+
+QComboBox::drop-down { /* Стрелка выпадающего списка */
+    border: none;
+}
+
+QComboBox QAbstractItemView { /* Стилизация выпадающего списка */
+    background-color: #2F3136;
+    color: #FFFFFF;
+    selection-background-color: #7289DA;
+    border: 1px solid #444444;
+}
+
+
+QRadioButton, QCheckBox {
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+QRadioButton::indicator, QCheckBox::indicator { /* Индикаторы */
+    width: 16px;
+    height: 16px;
+    border: 1px solid #7289DA;
+    border-radius: 3px;
+}
+
+QRadioButton::indicator::unchecked, QCheckBox::indicator::unchecked {
+    background-color: #2C2F33;
+}
+
+QRadioButton::indicator::checked, QCheckBox::indicator::checked {
+    background-color: #7289DA;
+    image: url(none); /* Убираем стандартный значок, если есть */
+}
+
+QProgressBar {
+    text-align: center;
+    color: white;
+    background-color: #23272A;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+QProgressBar::chunk {
+    background-color: #7289DA;
+    border-radius: 5px;
+}
+
+QListWidget {
+    background-color: #23272A;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFFFFF; /* Цвет текста элементов списка */
+}
+
+QListWidget::item {
+    padding: 5px; /* Немного отступа для элементов */
+    color: #FFFFFF; /* Цвет текста элементов списка */
+    /* border-bottom: 1px solid #444; */ /* Можно убрать, если много элементов */
+}
+
+QListWidget::item:selected {
+    background-color: #7289DA;
+    color: #FFFFFF; /* Цвет текста выбранного элемента */
+}
+
+/* Стили для вкладок */
+QTabWidget::pane { /* Область содержимого вкладки */
+    border: 1px solid #444;
+    background-color: #2C2F33; /* Фон содержимого вкладки */
+    border-top: none; /* Убираем верхнюю границу, так как она будет у tabBar */
+}
+
+QTabBar::tab { /* Стили для отдельных вкладок */
+    background: #2F3136;
+    color: #B0B0B0; /* Цвет неактивной вкладки */
+    border: 1px solid #444;
+    border-bottom: none; /* Нижняя граница убирается, чтобы сливаться с pane */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 8px 15px; /* Отступы внутри вкладки */
+    margin-right: 2px; /* Отступ между вкладками */
+}
+
+QTabBar::tab:selected { /* Стиль для активной вкладки */
+    background: #2C2F33; /* Такой же, как фон pane, для эффекта слияния */
+    color: #FFFFFF; /* Белый цвет текста для активной вкладки */
+    border-bottom: 1px solid #2C2F33; /* Скрываем нижнюю границу, чтобы слиться с pane */
+}
+
+QTabBar::tab:!selected:hover { /* При наведении на неактивную вкладку */
+    background: #3E4045;
+    color: #FFFFFF;
+}
+
+/* Стиль для QGroupBox */
+QGroupBox {
+    background-color: #2C2F33; /* Фон группы */
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-top: 10px; /* Отступ сверху, чтобы заголовок не налезал */
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left; /* Позиция заголовка */
+    padding: 0 5px 0 5px; /* Отступы для заголовка */
+    left: 10px; /* Смещение заголовка влево */
+    background-color: #2C2F33; /* Фон под заголовком такой же, как у группы */
+    color: #FFFFFF;
+}
+
+/* Стиль для QLineEdit, QSpinBox, QPlainTextEdit */
+QLineEdit, QSpinBox, QPlainTextEdit {
+    background-color: #23272A;
+    color: #FFFFFF;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+QSpinBox::up-button, QSpinBox::down-button { /* Кнопки SpinBox */
+    background-color: #2F3136;
+    border: 1px solid #444;
+    border-radius: 2px;
+    width: 16px;
+}
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background-color: #7289DA;
+}
+QSpinBox::up-arrow, QSpinBox::down-arrow {
+     /* Можно использовать иконки, если хотите */
+    border: 3px solid none; /* Пример для стрелок */
+    border-top-color: white; /* Для стрелки вниз */
+    width: 0;
+    height: 0;
+}
+QSpinBox::down-arrow {
+    border-top-color: none;
+    border-bottom-color: white; /* Для стрелки вверх */
+}
+
+
+QScrollArea { /* Для окна предпросмотра, если оно использует QScrollArea */
+    border: 1px solid #444;
+    background-color: #2C2F33;
+}
+
+/* Можно добавить стили для скроллбаров, если стандартные не нравятся */
+QScrollBar:vertical {
+    border: 1px solid #444;
+    background: #23272A;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:vertical {
+    background: #7289DA;
+    min-height: 20px;
+    border-radius: 4px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px; /* Убираем стандартные кнопки */
+    background: none;
+}
+
+QScrollBar:horizontal {
+    border: 1px solid #444;
+    background: #23272A;
+    height: 12px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:horizontal {
+    background: #7289DA;
+    min-width: 20px;
+    border-radius: 4px;
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+    background: none;
+}

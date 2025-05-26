@@ -1,0 +1,66 @@
+/* light_theme.qss */
+
+QWidget {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+QPushButton:hover {
+    background-color: #45A049;
+}
+
+QLabel {
+    font-size: 14px;
+}
+
+QComboBox {
+    background-color: #F0F0F0;
+    color: #000000;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+QRadioButton, QCheckBox {
+    font-size: 13px;
+    color: #000000;
+}
+
+QProgressBar {
+    text-align: center;
+    color: black;
+    background-color: #D3D3D3;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+QProgressBar::chunk {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+QListWidget {
+    background-color: #F0F0F0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QListWidget::item {
+    border-bottom: 1px solid #ccc;
+}
+
+QListWidget::item:selected {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+}
