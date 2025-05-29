@@ -40,6 +40,6 @@ SQL-инъекции, XSS, SSTI, LFI/RFI, SSRF, открытые редирек�
    ```bash
    pip install -r requirements.txt
 
-**Автор:** [0xd5f] 
+**Автор:** [0xd5f](https://github.com/0xd5f)
 ---
-BTC: bc1q20yn32a9ykkgcf7r8g23n7gwqzzfj9u932w4ww
+BTC: `bc1q20yn32a9ykkgcf7r8g23n7gwqzzfj9u932w4ww`
